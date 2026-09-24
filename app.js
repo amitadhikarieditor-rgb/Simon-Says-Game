@@ -80,10 +80,9 @@ function reset (){
 };
 
 function score(){
-    if(highScore<level){
+    if(highScore<=level){
         highScore=level;
     }
-     
     let h3=document.querySelector("h3");
     if(!h3){
         h3=document.createElement("h3");
