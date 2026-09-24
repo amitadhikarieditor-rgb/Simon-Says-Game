@@ -49,7 +49,7 @@ function levelUp(){
     let idx=Math.floor(Math.random()*4);
     let randomColor=color[idx];
     gameSeq.push(randomColor);
-    console.log(gameSeq);
+    // console.log(gameSeq);
 
 
     let ranBtn=document.querySelector(`.${randomColor}`);
@@ -63,7 +63,7 @@ function clicked(){
     let userColor=btn.getAttribute("id");
 
     userSeq.push(userColor);
-    console.log(userSeq);
+    // console.log(userSeq);
     check();
 };
 
@@ -91,43 +91,3 @@ function score(){
     }
     h3.innerText= `Your Highest Score is ${highScore}`;
 }
-
-
-// function saveToDb(color){
-//     return new Promise((resolve,reject)=>{
-//         let internetSpeed=(Math.floor(Math.random()*10))+1;
-//     if (internetSpeed>4){
-//         resolve();
-//     }else{
-//         reject();
-//     }
-//     });
-// }
-
-// saveToDb("amit adhikari")
-// .then(()=>{
-//     return saveToDb("here it is")
-// })
-// .then(()=>{
-//     return saveToDb("ho gya ab toh")
-// })
-// .catch(()=>{
-//     console.log("nahi hua save")
-// })
-
-// function levelUp(){
-//     level++;
-//     h2.innerText=`level${level}`;
-//     let idx=Math.floor(Math.random()*4);
-//     let randColor=color[idx];
-//     gameSeq.append(randColor);
-// }
-
-// function flash(){
-//     Btn.classList.add("flash");
-//     setTimeout(()=>{
-//         Btn.classList.remove;
-//     },250)
-// }
-
-
